@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+        <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="vertical"
+                android:scrollbars="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/info" />
+
+                <TextView
+                    android:id="@+id/alertTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:fontFamily="cursive"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="5dp"
+                    android:text="ggg"
+                    android:textSize="35dp" />
+
+                <TextView
+                    android:id="@+id/Title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title: "
+                    android:layout_margin="15dp"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/Rank_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rank: "
+                    android:layout_margin="15dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/Author_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Author: "
+                    android:layout_margin="15dp"
+                    android:textSize="18dp"  />
+
+                <TextView
+                    android:id="@+id/Published_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Published: "
+                    android:layout_margin="15dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/Updated_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Updated: "
+                    android:layout_margin="15dp"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/summary_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Summary"
+                    android:layout_margin="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
